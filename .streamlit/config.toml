@@ -1,0 +1,42 @@
+[server]
+
+# Max size, in megabytes, for files uploaded with the file_uploader.
+# Default: 200
+maxUploadSize = 2000
+
+# Max size, in megabytes, of messages that can be sent via the WebSocket
+# connection.
+# Default: 200
+maxMessageSize = 2000
+
+# The address where the server will listen for client and browser
+# connections. Use this if you want to bind the server to a specific address.
+# If set, the server will only be accessible from this address, and not from
+# any aliases (like localhost).
+# Default: (unset)
+address = "localhost"
+
+# The port where the server will listen for browser connections.
+# Don't use port 3000 which is reserved for internal development.
+# Default: 8501
+port = 8201
+
+# If false, will attempt to open a browser window on start.
+# Default: false unless (1) we are on a Linux box where DISPLAY is unset, or
+# (2) we are running in the Streamlit Atom plugin.
+headless = true
+
+[browser]
+
+# Internet address where users should point their browsers in order to
+# connect to the app. Can be IP address or DNS name and path.
+# This is used to:
+# - Set the correct URL for CORS and XSRF protection purposes.
+# - Show the URL on the terminal
+# - Open the browser
+# Default: "localhost"
+serverAddress = "localhost"
+
+# Whether to send usage statistics to Streamlit.
+# Default: true
+gatherUsageStats = true
